@@ -23,7 +23,7 @@
 }
 
 .section-home {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-image: linear-gradient(45deg, #ffffff, transparent);
 }
@@ -50,6 +50,9 @@
   padding-right: 5px;
 }
 
+.link:hover {
+  background-color: #aba7a7;
+}
 /* CONTENT*/
 .title {
   color: rgb(62 154 249);
@@ -68,15 +71,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   font-size: xx-large;
+  width: 100%;
 }
 
 .textanime p {
   color: rgb(67, 61, 61);
   font-weight: 600;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  
+
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
@@ -103,6 +107,11 @@
     border-color: orange;
   }
 }
+.swift-up-text {
+  margin: 0;
+  letter-spacing: -1px;
+  font-size: 55px;
+}
 
 /**
 ABOUT
@@ -124,6 +133,7 @@ ABOUT
 .company {
   display: inline-flex;
   align-items: center;
+  width: 50%;
 }
 
 /*Skill*/
@@ -186,4 +196,10 @@ ABOUT
   font-weight: bolder;
 
   text-shadow: 2px 2px #000000;
+}
+
+@media only screen and (max-width: 850px) {
+  .company {
+    width: 100%;
+  }
 }

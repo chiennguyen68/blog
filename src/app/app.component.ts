@@ -9,5 +9,5 @@ export class AppComponent {
 
   title = 'NDC';
   // ScrollReveal(): any.reveal('.headline');
- 
+
 }
